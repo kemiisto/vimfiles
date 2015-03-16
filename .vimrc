@@ -24,6 +24,12 @@ set ruler   " Show row and column ruler information
 set undolevels=1000 " Number of undo levels
 set backspace=indent,eol,start  " Backspace behaviour
 
+"let fortran_free_source=1 
 syntax on
 filetype on
 au BufNewFile,BufRead *.m set filetype=oberon2
+
+augroup vimrc_autocmds
+  autocmd BufEnter * highlight OverLength ctermbg=darkgrey guibg=#111111
+  autocmd BufEnter * match OverLength /\%80v.*/
+augroup END
