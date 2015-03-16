@@ -25,3 +25,5 @@ set undolevels=1000 " Number of undo levels
 set backspace=indent,eol,start  " Backspace behaviour
 
 syntax on
+filetype on
+au BufNewFile,BufRead *.m set filetype=oberon2
