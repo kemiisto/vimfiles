@@ -13,6 +13,10 @@ if exists("b:did_ftplugin")
   finish
 endif
 
+setlocal expandtab
+setlocal shiftwidth=2
+setlocal softtabstop=2
+
 let s:cposet=&cpoptions
 set cpoptions&vim
 
