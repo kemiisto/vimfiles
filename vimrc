@@ -19,6 +19,8 @@ set smarttab        " Enable smart-tabs
 set softtabstop=4   " Number of spaces per Tab
  
 "" Advanced
+execute pathogen#infect()
+
 set ruler   " Show row and column ruler information
  
 set undolevels=1000 " Number of undo levels
