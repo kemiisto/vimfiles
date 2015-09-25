@@ -17,7 +17,11 @@ set shiftwidth=4    " Number of auto-indent spaces
 set smartindent     " Enable smart-indent
 set smarttab        " Enable smart-tabs
 set softtabstop=4   " Number of spaces per Tab
- 
+
+"" Colorscheme
+set t_Co=256
+colorscheme Tomorrow-Night
+
 "" Advanced
 execute pathogen#infect()
 
