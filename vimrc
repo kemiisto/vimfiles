@@ -38,5 +38,5 @@ au BufNewFile,BufRead *.m set filetype=oberon2
 
 augroup vimrc_autocmds
   autocmd BufEnter * highlight OverLength ctermbg=darkgrey guibg=#111111
-  autocmd BufEnter * match OverLength /\%80v.*/
+  autocmd BufEnter * match OverLength /\%100v.*/
 augroup END
