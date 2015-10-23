@@ -20,7 +20,9 @@ set softtabstop=4   " Number of spaces per Tab
 
 "" Colorscheme
 set t_Co=256
-colorscheme Tomorrow-Night
+if has("unix")
+  colorscheme Tomorrow-Night
+endif
 
 "" Advanced
 execute pathogen#infect()
