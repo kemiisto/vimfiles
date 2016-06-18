@@ -27,7 +27,17 @@ endif
 "" Advanced
 execute pathogen#infect()
 
-set ruler   " Show row and column ruler information
+"============================================================================
+" Turn on the ruler in the status line
+"============================================================================
+
+set ruler
+
+"============================================================================
+" Make % match angle brackets as well
+"============================================================================
+
+set matchpairs+=<:>
  
 set undolevels=1000 " Number of undo levels
 set backspace=indent,eol,start  " Backspace behaviour
