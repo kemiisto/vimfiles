@@ -69,4 +69,9 @@ function! HelpInNewTab ()
     "Convert the help window to a tab...
     execute "normal \<C-W>T"
   endif
-endfunction 
+endfunction
+
+"============================================================================
+" Make AutoComplPop look for matches in exact same places as CTRL-N
+"============================================================================
+let g:acp_completeOption = '.,w,b,u,t,i'
